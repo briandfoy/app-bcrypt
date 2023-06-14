@@ -323,7 +323,7 @@ sub _message_fh () {
 	}
 
 sub _modules () {
-	qw(Crypt::Bcrypt Crypt::URandom MIME::Base64);
+	qw(Crypt::Bcrypt Crypt::URandom);
 	}
 
 sub _process_args ($args) {
