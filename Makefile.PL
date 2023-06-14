@@ -52,6 +52,8 @@ my %WriteMakefile = (
 	'LICENSE'       => 'artistic_2',
 	'AUTHOR'        => 'brian d foy <bdfoy@cpan.org>',
 
+	'EXE_FILES'     => [qw(script/bcrypt)],
+
 	'CONFIGURE_REQUIRES' => {
 		'ExtUtils::MakeMaker'   => '6.64',
 		'File::Spec::Functions' => '0',
