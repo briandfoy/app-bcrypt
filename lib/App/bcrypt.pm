@@ -27,14 +27,15 @@ distribution is there to install the prerequisites.
 
 =over 4
 
-=item *
+=item * Crypt::Bcrypt (which this program uses)
 
-=item *
+=item * Mojolicious::Plugin::Bcrypt
 
-=item *
+=item * Mojolicious::Command::bcrypt
 
-=cut
+=item * https://github.com/shoenig/bcrypt-tool, a Golang tool
 
+=back
 
 =head1 SOURCE AVAILABILITY
 
