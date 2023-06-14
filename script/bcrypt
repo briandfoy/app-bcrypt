@@ -376,8 +376,8 @@ sub _show_version ($debug = 0) {
 
 	foreach my $module ( sort { $a cmp $b} _modules() ) {
 		my $rc = eval "require $module";
-
-		_message( sprintf "\t%-*s %f at ", $width, $module, $module->VERSION, $INC{} )
+		my $rel_path = $module =~ s|::|/|gr . '.pm';
+		_message( sprintf "\t%-*s\n\t\t%f\n\t\t%s", $width, $module, $module->VERSION, $INC{$rel_path} )
 		}
 
 	return EX_SUCCESS;
