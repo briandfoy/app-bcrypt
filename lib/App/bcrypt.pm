@@ -1,10 +1,8 @@
 package App::bcrypt;
-use strict;
+use ut8;
+use v5.30;
 
-use warnings;
-no warnings;
-
-our $VERSION = '0.001_01';
+our $VERSION = '1.001';
 
 =encoding utf8
 
@@ -18,30 +16,24 @@ App::bcrypt - A command-line tool to deal with bcrypt password hashing
 
 =head1 DESCRIPTION
 
-=over 4
-
-=item new
-
-=cut
-
-sub new {
-
-	}
-
-=item init
-
-=cut
-
-sub init {
-
-	}
-
-=back
+This module is a placeholder to reserve the namespace, and you don't
+need it for the program its distribution provides. The Perl module
+distribution is there to install the prerequisites.
 
 =head1 TO DO
 
 
 =head1 SEE ALSO
+
+=over 4
+
+=item *
+
+=item *
+
+=item *
+
+=cut
 
 
 =head1 SOURCE AVAILABILITY
