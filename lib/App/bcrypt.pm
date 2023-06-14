@@ -1,5 +1,5 @@
 package App::bcrypt;
-use ut8;
+use utf8;
 use v5.30;
 
 our $VERSION = '1.001';
