@@ -299,7 +299,8 @@ sub _defaults () {
 sub _default_salt () {
 	my $unencoded_salt = do {
 		if( exists $ENV{BCRYPT_SALT} ) {
-			encode( 'UTF-8', $ENV{BCRYPT_SALT} )
+			state $rc = require Encode;
+			Encode::encode( 'UTF-8', $ENV{BCRYPT_SALT} )
 			}
 		else {
 			state $rc = require Crypt::URandom;
@@ -323,7 +324,7 @@ sub _message_fh () {
 	}
 
 sub _modules () {
-	qw(Crypt::Bcrypt Crypt::URandom);
+	qw(Crypt::Bcrypt Crypt::URandom Encode);
 	}
 
 sub _process_args ($args) {
