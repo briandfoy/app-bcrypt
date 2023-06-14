@@ -3,6 +3,8 @@
 use v5.30;
 use experimental qw(signatures);
 
+=encoding utf8
+
 =head1 NAME
 
 bcrypt - A command-line tool to deal with bcrypt password hashing
