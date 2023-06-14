@@ -67,7 +67,8 @@ my %WriteMakefile = (
 		},
 
 	'PREREQ_PM' => {
-		'Carp' => '0',
+		'Crypt::Bcrypt'  => '0',
+		'Crypt::Urandom' => '0',
 		},
 
 	'META_MERGE' => {
