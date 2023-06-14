@@ -11,9 +11,7 @@ my $pid = open3(
 	);
 
 my $output = do { local $/; <$output_fh> };
-diag($output);
-
-pass();
+like $output, qr/syntax ok/i;
 
 waitpid( $pid, 0 );
 
