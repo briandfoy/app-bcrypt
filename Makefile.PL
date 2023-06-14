@@ -69,7 +69,7 @@ my %WriteMakefile = (
 	'PREREQ_PM' => {
 		'Crypt::Bcrypt'  => '0',
 		'Crypt::Urandom' => '0',
-		},
+ 		},
 
 	'META_MERGE' => {
 		'meta-spec' => { version => 2 },
