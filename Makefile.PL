@@ -63,6 +63,7 @@ my %WriteMakefile = (
 		},
 
 	'TEST_REQUIRES' => {
+		'IPC::Open3'   => '0',
 		'Test::More' => '1',
 		},
 
