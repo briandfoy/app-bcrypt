@@ -226,6 +226,7 @@ sub run ( @args ) {
 	return _update_modules() if grep { $_ eq '--update-modules' } @args;
 
 	my $processed_args = _process_args(\@args);
+	exit EX_USAGE unless defined $processed_args;
 
 	return _show_version($processed_args->{'debug'}) if $processed_args->{'version'};
 	return _show_help() if $processed_args->{'help'};
@@ -346,7 +347,8 @@ sub _process_args ($args) {
 		'version|v'      => \ $opts{'version'},
 		);
 
-	Getopt::Long::GetOptionsFromArray( $args, %opts_description );
+	my $ret = Getopt::Long::GetOptionsFromArray( $args, %opts_description );
+	return unless $ret;
 
 	return \%opts;
 	}
