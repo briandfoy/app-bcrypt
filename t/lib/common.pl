@@ -44,3 +44,5 @@ sub run_command ( %hash ) {
 		'exit'  => $exit,
 		};
 	}
+
+1;
