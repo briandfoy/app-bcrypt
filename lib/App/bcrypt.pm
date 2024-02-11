@@ -2,7 +2,7 @@ package App::bcrypt;
 use utf8;
 use v5.30;
 
-our $VERSION = '1.001';
+our $VERSION = '1.002';
 
 =encoding utf8
 
