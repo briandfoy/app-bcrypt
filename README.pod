@@ -2,6 +2,20 @@
 
 =encoding utf8
 
+=for HTML <a href="https://www.github.com/briandfoy/app-bcrypt/actions?query=workflow%3Amacos"><img src="https://www.github.com/briandfoy/app-bcrypt/workflows/macos/badge.svg"></a>
+
+=for HTML <a href="https://www.github.com/briandfoy/app-bcrypt/actions?query=workflow%3Aubuntu"><img src="https://www.github.com/briandfoy/app-bcrypt/workflows/ubuntu/badge.svg"></a>
+
+=for HTML <a href="https://www.github.com/briandfoy/app-bcrypt/actions?query=workflow%3Awindows"><img src="https://www.github.com/briandfoy/app-bcrypt/workflows/windows/badge.svg"></a>
+
+=for HTML <a href='https://ci.appveyor.com/project/briandfoy/app-bcrypt'><img src='https://ci.appveyor.com/api/projects/status/fo93tj5pf6vvan0m?svg=true'></a>
+
+=for HTML <a href='https://coveralls.io/github/briandfoy/app-bcrypt?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/app-bcrypt/badge.svg?branch=master' alt='Coverage Status' /></a>
+
+=for HTML <a href="https://github.com/briandfoy/app-bcrypt/blob/master/LICENSE"><img src="https://img.shields.io/cpan/l/App-bcrypt.svg" /></a>
+
+=for HTML <a href="https://metacpan.org/pod/App::bcrypt"><img src="https://img.shields.io/cpan/v/App-bcrypt.svg" /></A>
+
 =head1 The App::bcrypt module
 
 This is the I<README> for the L<App::bcrypt> Perl module.
