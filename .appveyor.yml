@@ -25,11 +25,13 @@ skip_tags: true
 install:
   - cmd: if not exist "C:\strawberry" cinst strawberryperl
   - cmd: set PATH=%SP%\perl\bin;%SP%\perl\site\bin;%SP%\c\bin;%PATH%
+  - cmd: set PERL5LIB=%SP%/home/appveyor/perl5/lib/perl5;%PERL5LIB%
   - cmd: cd %APPVEYOR_BUILD_FOLDER%
   - sh: sudo apt-get update --allow-releaseinfo-change
   - sh: sudo env apt-get -yq install build-essential git libssl-dev
   - sh: sudo apt-get install -y perl
   - sh: export PATH=/home/appveyor/perl5/bin:$PATH
+  - sh: export PERL5LIB=/home/appveyor/perl5/lib/perl5:$PERL5LIB
   - perl -v
   - cpan -M https://www.cpan.org -T App::cpanminus ExtUtils::MakeMaker
   - cmd: cpanm --notest --installdeps .
