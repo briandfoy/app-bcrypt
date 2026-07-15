@@ -1,6 +1,15 @@
 use v5.30;
 use experimental qw(signatures);
 
+use POSIX qw(dup2);
+
+BEGIN {
+    unless ( defined fileno STDIN ) {
+        open my $devnull, '<', '/dev/null' or die "Can't open /dev/null: $!";
+        POSIX::dup2( fileno($devnull), 0 ) or die "Can't dup2 onto fd 0: $!";
+        }
+    }
+
 my $program = 'blib/script/bcrypt';
 
 subtest 'sanity' => sub {
