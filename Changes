@@ -2,6 +2,9 @@
 1.001 2023-06-14T10:46:01Z
 	* Initial release of a bcrypt utility in Perl
 
+1.004_001 2026-07-15T20:41:30Z
+	* trial release to check some testing things
+
 1.004 2026-07-11T19:47:57Z
 	* fix to help.t test (pod formatting) (#2)
 
